@@ -1,3 +1,4 @@
+"use strict";
 /**
  * Time complexity: O(N^2)
  */
