@@ -9,3 +9,13 @@ AVG -> O(n) - middle is also avg times
 ---------------------------------------------
 BINARY SEARCH - sorted data
 // eliminates half data, divide and conquer
+// length of array grows, how does time complexity grows
+BEST CASE - O(1)
+WORST AVERAGE - O(log n)
+---------------------------------------------
+NAIVE SEARCH
+// Substring
+
+---------------------------------------------
+SORT
+// sorting smaller to bigger, alphabetically, based on year...
