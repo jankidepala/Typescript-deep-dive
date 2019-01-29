@@ -2,7 +2,7 @@
 ---------------------------------------------
 LINEAR SEARCH - unsorted data
 - Search by going one by one through element
-//indexOf() includes()  find  findIndex
+//indexOf() includes()  find  find
 BEST -> O(1) - Constant Best Case
 WORST -> O(n) -looking through million integers. will have to look million times
 AVG -> O(n) - middle is also avg times
