@@ -1,35 +1,25 @@
-console.log("Good Morning!")
-//1 sec == 1000 ms
+t = [1, 6, 16, 8, 9, 9, 7]
 
-// setTimeout(function() {
-//    console.log(1)
-// }, 0)
-// setTimeout(function() {
-//    console.log(1)
-// }, 0)
-// setTimeout(function() {
-//  console.log(1)
-// }, 100)
-// setTimeout(function() {
-//    console.log(5)
-// }, 100)
-// setTimeout(function() {
-//    console.log(1)
-// }, 0)
-console.log('SDSD-')
-setTimeout(function() {
-  console.log(1)
-}, 0)
-setTimeout(function() {
-  console.log(2)
-}, 0)
-setTimeout(function() {
-  console.log(3)
-}, 100)
-setTimeout(function() {
-  console.log(4)
-}, 100)
-setTimeout(function() {
-  console.log(5)
-}, 0)
+// const b = t.forEach((element, i) => {
+//  element == t[i + 1] ? t[i + 1] = element + 1 : null
+//   // console.log(t)
+ 
+// });
 
+// const m = t.map((num, i) => {
+//    //return num == t[i + 1] ? arr[i + 1] = num + 1 : t
+// })
+
+
+var foo = 1; 
+function bar() { 
+    console.log(foo)
+    if (!foo) { 
+        var foo = 10; 
+    } 
+    console.log(foo); 
+} 
+bar();
+
+var t =['sdf', 'sdfds']
+console.log(t[0])
