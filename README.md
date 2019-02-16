@@ -4,6 +4,11 @@
 //substring() - only positive vals
 //validAnagrams
 
+//Bubble sort is a simple sorting algorithm that repeatedly steps through the list to be sorted, compares each pair of adjacent items and swaps them if they are in the wrong order. The pass through the list is repeated until no swaps are needed, which indicates that the list is sorted.
+BEST- O(n)  |  WORST - O(n^2)	O(n^2)
+
+Selection sort 
+
 //Filter - select certain items of an array where condition is true
 //map -converts each item of an array, returns a value
 //REDUCE- single value - The reduce() method is used to apply a function to each element in the array to reduce the array to a single value. arr.reduce(callback, initValue);
@@ -27,6 +32,10 @@ BINARY SEARCH - sorted data
 BEST CASE - O(1)
 WORST AVERAGE - O(log n)
 ---------------------------------------------
+SINGLE LINKED LIST - head, tail and length property.
+LL consist of node has a value and a pointer to another node or null
+---------------------------------------------
+
 NAIVE SEARCH
 // Substring
 
@@ -100,4 +109,13 @@ console.log("AS", p)
 CLOSURE::
 //In JavaScript, every running function, code block, and the script as a whole have an associated object known as the Lexical Environment.
 <!-- /In JavaScript, whenever you declare a function inside another function, the inside function(s) is/are recreated again each time the outside function is called.) -->
+What is a closure?
+A closure is a feature in JavaScript where an inner function has access to the outer (enclosing) function’s variables — a scope chain.
+
+The closure has three scope chains:
+
+it has access to its own scope — variables defined between its curly brackets
+it has access to the outer function’s variables
+it has access to the global variables
+To the uninitiated, this definition might seem like j
 
