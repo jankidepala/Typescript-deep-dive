@@ -1,11 +1,15 @@
-// Binary Search is searching technique which works on Divide and Conquer approach (Half-Interval Search). It used to search any element in a sorted array.
+// Binary Search is searching technique which works on 
+//Divide and Conquer approach (Half-Interval Search).
+// It used to search any element in a sorted array.
+//Time Complexity of O(logN)
 
+// iterative and recursive
 function binarySearch(array, target){
   let startIndex = 0;
   let endIndex = array.length - 1;
   while(startIndex <= endIndex) {
     let middleIndex = Math.floor((startIndex + endIndex) / 2);
-    if(target === array[middleIndex) {
+    if(target === array[middleIndex]) {
       return console.log("Target was found at index " + middleIndex);
     }
     if(target > array[middleIndex]) {
@@ -23,3 +27,5 @@ function binarySearch(array, target){
   
   console.log("Target value not found in array");
 }
+
+binarySearch( [5, 9, 7, 1], 1)

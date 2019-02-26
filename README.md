@@ -3,7 +3,7 @@
 //slice() - returns extracted part of string -  a.slice(1)
 //substring() - only positive vals
 //validAnagrams
-
+// omline offline
 //Bubble sort is a simple sorting algorithm that repeatedly steps through the list to be sorted, compares each pair of adjacent items and swaps them if they are in the wrong order. The pass through the list is repeated until no swaps are needed, which indicates that the list is sorted.
 BEST- O(n)  |  WORST - O(n^2)	O(n^2)
 
@@ -17,6 +17,8 @@ ARRAYS:
 t = [1, 6, 16, 8, 9, 9, 7]
 
 sort() =  //[ 1, 16, 6, 7, 8, 9, 9 ]
+//SOME - The some() method tests whether at least one element in the array passes the test implemented by the provided function.
+
 
 ---------------------------------------------
 LINEAR SEARCH - unsorted data
@@ -27,14 +29,21 @@ WORST -> O(n) -looking through million integers. will have to look million times
 AVG -> O(n) - middle is also avg times
 ---------------------------------------------
 BINARY SEARCH - sorted data
-// eliminates half data, divide and conquer
-// length of array grows, how does time complexity grows
+Eliminates half data, divide and conquer.
+Length of array grows, how does time complexity grows
 BEST CASE - O(1)
 WORST AVERAGE - O(log n)
 ---------------------------------------------
-SINGLE LINKED LIST - head, tail and length property.
+SINGLE LINKED LIST - consists of node. each node has a value.  references next item. head, tail and length property. each node is connected one directional to next node.
 LL consist of node has a value and a pointer to another node or null
 ---------------------------------------------
+DOUBLY LINKED LIST
+---------------------------------------------
+LISTS VS ARRAY:
+Lists -> do not have indexes, connected via nodes with a next pointer, random access is not allowed, insertion and deletion are faster
+Arrays -> indexes in order, insertion and deletion can be expensive, can quickly be access at specific index
+---------------------------------------------
+
 
 NAIVE SEARCH
 // Substring
@@ -46,9 +55,51 @@ SORT
 Bubble, selection insertion - elementry and less efficient
 BUilt in JS Sort
 => arr.sort()
+---------------------------------------------
+TREE 
+Root
+Child 
+Parent
+Siblings
+Leaf 
+Edge
 
+A binary search tree is a data structure that makes searching and organizing data very straightforward.
+
+BREATH FIRST - every sibbling to be checked
+DEPTH FIRRST
+---------------------------------------------
+BIG O OF BST
+Insertion - O(log n)
+Searchin - O(log n)
 
 ---------------------------------------------
+STACK - Last In, First Out (LIFO)
+stack organizes data into sequential order.
+// Stacks are used for
+    - Managing function
+    - Undo/Redo - step by step remove from stack
+    - Routing (the history object) is treated like a stack
+    
+push(data) adds data.
+pop() removes the most recently added data.
+    BIG O STACK ---------->
+    Insertion - O(1)
+    Removal  - O(1)
+    Searching - O(N)
+    Access - O(N)
+
+  BIG O QUEUES ---------->
+    Insertion - O(1)
+    Removal  - O(1)
+    Searching - O(N)
+    Access - O(N)
+
+QUEUES - First In, First Out (FIFO). 
+---------------------------------------------
+TREES :
+---------------------------------------------
+
 
 a = [1, 6, 17, 8, 9, 9, 3, -1]
 s = "Janki Dee"
@@ -65,12 +116,21 @@ person["firstName"] = "John";
 person["lastName"] = "Doe";
 person["age"] = 46;
 // Object
+---------------------------------------------
+ARRAY - BIGO Complexity
+Access - O(1)
+Appending - Amortized O(1) (sometimes resizing the hashtable is required; usually only insertion is required)
+Prepending - O(n) via unshift, since it requires reassigning all the indexes
+Insertion - Amortized O(1) if the value does not exist. O(n) if you want to shift existing values (Eg, using splice).
+Deletion - Amortized O(1) to remove a value, O(n) if you want to reassign indices via splice.
+Swapping - O(1)
+---------------------------------------------
 
 Array.isArray(a) ///recognise an array  >> true
 a.toString()     //Array to string  >>-1,1,17,3,6,8,9,9
 a.join('*')      //Array to string with seperator >> -1*1*17*3*6*8*9*9
-a.pop()          //removes last element of an array  >> -1
-a.push(-1)       // add last element in the array >> -1
+a.pop()          //removes last element of an array  >> -1 //doesnt affect any inddices
+a.push(-1)       // add last element in the array >> -1 /doesnt affect any inddices
 a.shift()        // removes first element and shifts all element to lower index //[ 6, 17, 8, 9, 9, 3, -1 ]
 a.unshift('tat')  // add new elem beginning //[ 'tat', 6, 17, 8, 9, 9, 3, -1 ]
 a.splice(1, "howMany", "withwhat")        //remove element(where, howMany, withwhat ) 
