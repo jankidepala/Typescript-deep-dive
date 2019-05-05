@@ -6,7 +6,7 @@
             "type": "node",
             "request": "launch",
             "name": "Launch Program",
-            "program": "${workspaceRoot}/enum.js"
+            "program": "${workspaceRoot}/Sort-BigO.js"
         },
             {
                 "type": "node",

@@ -18,8 +18,11 @@ t = [1, 6, 16, 8, 9, 9, 7]
 
 sort() =  //[ 1, 16, 6, 7, 8, 9, 9 ]
 //SOME - The some() method tests whether at least one element in the array passes the test implemented by the provided function.
-
-
+---------------------------------------------
+SPLICE VS SLICE
+//1. splice() method returns the removed item(s) in an array and 
+//2. slice() method returns the selected element(s) in an array, as a new array object.
+-- The splice() method changes the original array and slice() method doesn’t change the original array.
 ---------------------------------------------
 LINEAR SEARCH - unsorted data
 - Search by going one by one through element
@@ -51,10 +54,12 @@ NAIVE SEARCH
 ---------------------------------------------
 SORT
 // sorting smaller to bigger, alphabetically, based on year...
+Bubble -> compare first to second item. and 2nd to 3rd
 
 Bubble, selection insertion - elementry and less efficient
 BUilt in JS Sort
 => arr.sort()
+
 ---------------------------------------------
 TREE 
 Root
