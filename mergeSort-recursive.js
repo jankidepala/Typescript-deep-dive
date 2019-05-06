@@ -1,10 +1,3 @@
-// SORT LOG O
-
-// Filter - new array
-// map - new array
-// Sort - add to existing array
-// Fill - add to existing array
-// reduce - 
 
 var arr1 = [3, -6576, 55, 16, 8 , 1];
 function mergeSort(arr) {
@@ -28,7 +21,7 @@ function mergeThis(left, right) {
             r++
         }
     }
-   //console.log("LEFT::", result, l, r, left, right, left.slice(l))
+   console.log("LEFT::", left, l, left.slice(l))
     return result.concat(left.slice(l)).concat(right.slice(r));
 }
 function merge123(left, right) {

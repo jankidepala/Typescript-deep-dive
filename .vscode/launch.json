@@ -6,7 +6,7 @@
             "type": "node",
             "request": "launch",
             "name": "Launch Program",
-            "program": "${workspaceRoot}/Sort-BigO.js"
+            "program": "${workspaceRoot}/insertion-sort.js"
         },
             {
                 "type": "node",

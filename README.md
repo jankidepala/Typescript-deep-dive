@@ -12,6 +12,7 @@ Selection sort
 //Filter - select certain items of an array where condition is true
 //map -converts each item of an array, returns a value
 //REDUCE- single value - The reduce() method is used to apply a function to each element in the array to reduce the array to a single value. arr.reduce(callback, initValue);
+// SORT LOG O // Filter - new array// map - new array// Sort - add to existing array// Fill - add to existing array
 
 ARRAYS:
 t = [1, 6, 16, 8, 9, 9, 7]
@@ -23,6 +24,7 @@ SPLICE VS SLICE
 //1. splice() method returns the removed item(s) in an array and 
 //2. slice() method returns the selected element(s) in an array, as a new array object.
 -- The splice() method changes the original array and slice() method doesn’t change the original array.
+--splice(index, howmany, itemtoadd);
 ---------------------------------------------
 LINEAR SEARCH - unsorted data
 - Search by going one by one through element
