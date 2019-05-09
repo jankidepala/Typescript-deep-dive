@@ -1,5 +1,23 @@
 # ALGORITHM AND DATA STRUCTURE
+---------------------------------------------
+>>> BIG(O) ->>
+O(1) - CONSTANT - Swap 2 nus
+O(n) - LINEAR - grows direct proportional to size of data
+O(log N) - LOGARITHMIC - peaks at beginning and slowly flattens as size of datat increase
+O(n log n) - LINEARITHMIC, LOGLINEAR Fastest possible comparison sort; heapsort and merge sort
+O(n!) - FACTORIAL - Solving the travelling salesman problem via brute-force search; 
+O(n2)/ O(2n) - EXPONENTIAL/QUADRATIC - growth doubles with each additon to the input data set..
+-  growth curve of an O(2N) function is exponential - starting off very shallow, then rising meteorically. recursive fibbonacci numbers.
+ Multiplying two n-digit numbers by a simple algorithm; simple sorting algorithms, such as bubble sort, selection sort and insertion sort; (worst case) bound on some usually faster sorting algorithms such as quicksort, Shellsort, and tree sort.
 
+---------------------------------------------
+>>> JAVASCRIPT BIG(O)
+PUSH /POP - O(1)
+Shift, Unshift, Concat, Slice, Splice - O(n)
+sort - O( n log N) - Merge Sort
+forEach(), map, filter, reduce - O(n)
+
+---------------------------------------------
 //slice() - returns extracted part of string -  a.slice(1)
 //substring() - only positive vals
 //validAnagrams
