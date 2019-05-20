@@ -1,6 +1,6 @@
 # ALGORITHM AND DATA STRUCTURE
----------------------------------------------
-BIG(O) ->>
+
+BIG(O)
 - O(1) - CONSTANT - Swap 2 nus.
 - O(n) - LINEAR - grows direct proportional to size of data.
 - O(log N) - LOGARITHMIC - peaks at beginning and slowly flattens as size of datat increase.
@@ -14,16 +14,29 @@ JAVASCRIPT BIG(O)
 - Shift, Unshift, Concat, Slice, Splice - O(n)
 - sort - O( n log N) - Merge Sort
 - forEach(), map, filter, reduce - O(n)
+---------------------------------------------
+
+SORT
+
+SORT
+Default sort() in JavaScript uses insertion sort by V8 Engine of Chrome and Merge sort by Mozilla Firefox and Safari.
+
+ - Quick - divide and conquer
+
+// sorting smaller to bigger, alphabetically, based on year...
+Bubble -> compare first to second item. and 2nd to 3rd
+
+Bubble, selection insertion - elementry and less efficient
+//Bubble sort is a simple sorting algorithm that repeatedly steps through the list to be sorted, compares each pair of adjacent items and swaps them if they are in the wrong order. The pass through the list is repeated until no swaps are needed, which indicates that the list is sorted.
+BEST- O(n)  |  WORST - O(n^2)	O(n^2)
+
+Selection sort 
 
 ---------------------------------------------
 //slice() - returns extracted part of string -  a.slice(1)
 //substring() - only positive vals
 //validAnagrams
 // omline offline
-//Bubble sort is a simple sorting algorithm that repeatedly steps through the list to be sorted, compares each pair of adjacent items and swaps them if they are in the wrong order. The pass through the list is repeated until no swaps are needed, which indicates that the list is sorted.
-BEST- O(n)  |  WORST - O(n^2)	O(n^2)
-
-Selection sort 
 
 //Filter - select certain items of an array where condition is true
 //map -converts each item of an array, returns a value
@@ -55,10 +68,22 @@ Length of array grows, how does time complexity grows
 BEST CASE - O(1)
 WORST AVERAGE - O(log n)
 ---------------------------------------------
-SINGLE LINKED LIST - consists of node. each node has a value.  references next item. head, tail and length property. each node is connected one directional to next node.
-LL consist of node has a value and a pointer to another node or null
----------------------------------------------
-DOUBLY LINKED LIST
+- Linear data structures
+    SINGLE LINKED LIST - consists of node. each node has a value.  references next item. head, tail and length property. each node is connected one directional to next node.
+    LL consist of node has a value and a pointer to another node or null
+    - Space - worst - O(n)
+    - [DATA, NEXT]
+    ---------------------------------------------
+      DOUBLY LINKED LIST - data, prev and next
+      - Space - worst - O(n)
+      Access	Search	Insertion	Deletion
+      O(n)	 O(n)	    O(1)	     O(1)
+      - Linked data consists of sequentally linked records called nodes.
+      - Node - (prev, next)
+    ---------------------------------------------
+
+CIRCULAR LINKED LIST
+
 ---------------------------------------------
 LISTS VS ARRAY:
 Lists -> do not have indexes, connected via nodes with a next pointer, random access is not allowed, insertion and deletion are faster
@@ -68,15 +93,6 @@ Arrays -> indexes in order, insertion and deletion can be expensive, can quickly
 
 NAIVE SEARCH
 // Substring
-
----------------------------------------------
-SORT
-// sorting smaller to bigger, alphabetically, based on year...
-Bubble -> compare first to second item. and 2nd to 3rd
-
-Bubble, selection insertion - elementry and less efficient
-BUilt in JS Sort
-=> arr.sort()
 
 ---------------------------------------------
 TREE 

@@ -33,5 +33,5 @@ console.log(count)
 ///STRING RETURN
 var str = 'Jaaaaaaaakittt';
 for (const ch of str){
-    
+    console.log(ch)
 }

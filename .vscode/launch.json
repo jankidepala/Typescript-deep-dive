@@ -6,7 +6,7 @@
             "type": "node",
             "request": "launch",
             "name": "Launch Program",
-            "program": "${workspaceRoot}/insertion-sort.js"
+            "program": "${workspaceRoot}/Graph.js"
         },
             {
                 "type": "node",

@@ -69,7 +69,6 @@ num.forEach((val, index) =>{
     console.log('add coma');    
   }
 })
-Math.floor
 
 /*
 Always open to improvement ,please share

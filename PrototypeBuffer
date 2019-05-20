@@ -1,0 +1,12 @@
+Schemas - message types
+
+Values - file describing what values are
+
+.proto - definition file
+syntax = "proto3";
+
+package todo;
+message Task{
+    Text string = 1;
+    done bool =2;
+}`
