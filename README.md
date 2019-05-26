@@ -18,6 +18,7 @@ JAVASCRIPT BIG(O)
 
 SORT
 
+BEST- O(n)  |  WORST - O(n^2)	O(n^2)
 SORT
 Default sort() in JavaScript uses insertion sort by V8 Engine of Chrome and Merge sort by Mozilla Firefox and Safari.
 
@@ -28,7 +29,6 @@ Bubble -> compare first to second item. and 2nd to 3rd
 
 Bubble, selection insertion - elementry and less efficient
 //Bubble sort is a simple sorting algorithm that repeatedly steps through the list to be sorted, compares each pair of adjacent items and swaps them if they are in the wrong order. The pass through the list is repeated until no swaps are needed, which indicates that the list is sorted.
-BEST- O(n)  |  WORST - O(n^2)	O(n^2)
 
 Selection sort 
 
@@ -93,21 +93,54 @@ Arrays -> indexes in order, insertion and deletion can be expensive, can quickly
 
 NAIVE SEARCH
 // Substring
+---------------------------------------------
 
+Linear DS - Arrays, Stack, Queue, Linked List
+    Data items are organized sequentially or linearly, one after another.
+    Traverse one after another and all data items can traverse in single run.
+    Easy to implement because memory of computer is also organized in linear fashion.
+Non linear DS - Trees and Graph
+    nodes have number of child nodes.
+    binary trees - every node has 2 child
+    unique node called root in tree
 ---------------------------------------------
 TREE 
-Root
-Child 
-Parent
-Siblings
-Leaf 
-Edge
+    - represent nodes connected by edges
+    - each node can have only 2 children.
+    - benefit of both ordered array and linked list as search is as quick as sorted array
+    - insertion or deletion are as fast as linked list
+    Root - Main
+    Child - last node, no child
+    Parent - of child
+    Siblings - 
+    Leaf - last node
+    Edge
+    keys - values on which a node is created
 
-A binary search tree is a data structure that makes searching and organizing data very straightforward.
+    A binary search tree is a data structure that makes searching and organizing data very straightforward.
+    BS - node's left child musht have a value less than its parent's value
+    - left node value is less than right side node.
+    https://medium.freecodecamp.org/data-structures-101-binary-search-tree-398267b6bff0
 
-BREATH FIRST - every sibbling to be checked
-DEPTH FIRRST
 ---------------------------------------------
+GRAPH 
+- abstract connection of points, describe state transitions, can be directed and weghted, collection of vertices/nodes
+TREES - no cycle, filesystem, collection of nodes and edges
+
+SPECIFIC USES: GRAPH
+  1. Binary Search trees - left child- right child and a value
+  traversing is faster
+  2. Object graphs - Component of a program
+
+  BREATH FIRST - 
+    every sibbling to be checked, 
+    find shortest way bettween 2 nodes
+
+DEPTH FIRRST - binary tree
+---------------------------------------------
+
+---------------------------------------------
+
 BIG O OF BST
 Insertion - O(log n)
 Searchin - O(log n)
@@ -209,7 +242,7 @@ CLOSURE::
 //In JavaScript, every running function, code block, and the script as a whole have an associated object known as the Lexical Environment.
 <!-- /In JavaScript, whenever you declare a function inside another function, the inside function(s) is/are recreated again each time the outside function is called.) -->
 What is a closure?
-A closure is a feature in JavaScript where an inner function has access to the outer (enclosing) function’s variables — a scope chain.
+A closure is a feature in JavaScript whe re an inner function has access to the outer (enclosing) function’s variables — a scope chain.
 
 The closure has three scope chains:
 

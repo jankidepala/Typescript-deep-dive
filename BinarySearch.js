@@ -1,31 +1,97 @@
 // Binary Search is searching technique which works on 
 //Divide and Conquer approach (Half-Interval Search).
 // It used to search any element in a sorted array.
-//Time Complexity of O(logN)
+//avg Time Complexity of O(logN) which is very efficient as dataset grows
+// hierarchical org chart, DOM, animal classification 
+//search, game logic, autocomplete tasks, and graphics.
 
+//unlike array, data is storedby ref. as we add it to DS, we create a ne chunk in memory..
+
+// no duplicates
+// object prototype method - to save memory
 // iterative and recursive
-function binarySearch(array, target){
-  let startIndex = 0;
-  let endIndex = array.length - 1;
-  while(startIndex <= endIndex) {
-    let middleIndex = Math.floor((startIndex + endIndex) / 2);
-    if(target === array[middleIndex]) {
-      return console.log("Target was found at index " + middleIndex);
-    }
-    if(target > array[middleIndex]) {
-      console.log("Searching the right side of Array")
-      startIndex = middleIndex + 1;
-    }
-    if(target < array[middleIndex]) {
-      console.log("Searching the left side of array")
-      endIndex = middleIndex - 1;
-    }
-    else {
-      console.log("Not Found this loop iteration. Looping another iteration.")
+/**
+BinarySearchTree {
+  root: Node {
+    left: Node { left: [Node], right: null, value: 20 },
+    right: Node { left: null, right: null, value: 100 },
+    value: 25
+  }
+}
+ */
+class Node {
+  constructor(val) {
+    this.left = null;
+    this.right = null;
+    this.value = val;
+  }
+}
+class BST {
+  constructor() {
+    this.root = null;
+  }
+  getMin(node) {
+    let queue = [];
+    queue.push(this.root);
+    console.log("QQQQQQQQ-------", queue)
+    var node1 = new Node(2)
+
+    if (!node) this.root = node1;
+    let current = this.root;
+    while (current.left) {
+      console.log(current)
+      node = current.left;
     }
   }
-  
-  console.log("Target value not found in array");
+  containe(value) {
+    if (!this.root) this.root = node;
+
+    let current = this.root
+    console.log(current)
+    while (current) {
+      if (value === current.value) return true;
+      if (value < current.value) current = current.left;
+      if (value > current.value) current = current.right;
+
+    }
+    return false;
+  }
+  insert(a) {
+
+    //node
+    //1. first node insert
+    //2. left or right
+    //3. whi
+
+    var node = new Node(a)
+    if (!this.root) this.root = node;
+    else {
+      let current = this.root;
+      while (current) {
+        if (node.value < this.root.value) {
+          //left
+          if (!current.left) {
+            current.left = node;
+            break;
+          }
+          current = current.left;
+        } else if (node.value > this.root.value) {
+          //right
+          if (!current.right) {
+            current.right = node;
+            break;
+          }
+          current = current.right;
+        } else {
+          break;
+        }
+      }
+    }
+    console.log("this----", this)
+    return this;
+  }
 }
 
-binarySearch( [5, 9, 7, 1], 1)
+let bst = new BST();
+console.log(bst.insert(26).insert(20).insert(70).insert(80)); // BST { root: Node { value: 25, left: null, right: null } }
+console.log("SEARCH", bst.getMin());
