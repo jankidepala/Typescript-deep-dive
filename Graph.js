@@ -9,41 +9,42 @@
 1. Adjacent Matrix - 2d matrix
 2. Adjacent List - list matrix[] - hash ytable key data structure
     - space, real life data has more node, useful for manby data
+- node is important
 
-
-weighted - values - km distance in maps between vertices
+weighted - values - km distance in maps between vertices, maps
 unweighted - no values
 
 circle - vertices
 connection - edge
 
-Tree - one path a to b
-
+- matrices - graphs with lots of edges fare better as matrices and 
+- List - graphs with fewer edges fare better as lists
 BigO
 
 add vertex - o(1)
 */
 
+
 class Graph {
-    constructor(){
+    constructor() {
         this.adjList = new Map;
     }
-    addVertex(s){
-        this.adjList.set(s, [] )
+    addVertex(s) {
+        this.adjList.set(s, [])
     }
-    addEdge(v1, v2){
+    addEdge(v1, v2) {
         //
         this.adjList.set(v1, v2)
         this.adjList.set(v2, v1)
     }
-    removeEdge(v1, v2){
+    removeEdge(v1, v2) {
         console.log(this.adjList)
 
-        var getEntriesArry = this.adjList.entries(); 
-       if(getEntriesArry.next().value[0] == v1){
-           console.log("ASASASASA")
-       }
-console.log("RET",getEntriesArry.next().value)
+        var getEntriesArry = this.adjList.entries();
+        if (getEntriesArry.next().value[0] == v1) {
+            console.log("ASASASASA")
+        }
+        console.log("RET", getEntriesArry.next().value)
         //this.adjList.delete(v1, v2)
     }
 }
@@ -51,8 +52,8 @@ var g = new Graph;
 g.addVertex('Tokyo')
 g.addVertex('Aspen')
 g.addVertex('nairobi')
-g.addEdge('Aspen' ,'Tokyo')
+g.addEdge('Aspen', 'Tokyo')
 //g.addEdge('Aspen' ,'Heisin')
-g.removeEdge('Aspen' ,'Heisin')
+g.removeEdge('Aspen', 'Heisin')
 
 console.log(g);

@@ -1,21 +1,39 @@
 # ALGORITHM AND DATA STRUCTURE
 
 BIG(O)
-- O(1) - CONSTANT - Swap 2 nus.
-- O(n) - LINEAR - grows direct proportional to size of data.
-- O(log N) - LOGARITHMIC - peaks at beginning and slowly flattens as size of datat increase.
-- O(n log n) - LINEARITHMIC, LOGLINEAR Fastest possible comparison sort; heapsort and merge sort.
-- O(n!) - FACTORIAL - Solving the travelling salesman problem via brute-force search.
-- O(n2)/ O(2n) - EXPONENTIAL/QUADRATIC - growth doubles with each additon to the input data set..growth curve of an O(2N) function is exponential - starting off very shallow, then rising meteorically. recursive fibbonacci numbers.  Multiplying two n-digit numbers by a simple algorithm; simple sorting algorithms, such as bubble sort, selection sort and insertion sort; (worst case) bound on some usually faster sorting algorithms such as quicksort, Shellsort, and tree sort.
+- O(1) - CONSTANT - Swap 2 nus.hashing, memoization
 
+- O(n) - LINEAR - grows direct proportional to size of data.
+
+- O(log N) - LOGARITHMIC - peaks at beginning and slowly flattens as size of datat increase. - binary search, divide and conquer
+
+- O(n log n) - LINEARITHMIC, LOGLINEAR Fastest possible comparison sort; heapsort and merge sort.
+
+- O(n2) - QUADRATIC - Input is n, then runtime is n2
+  selection sort - looks for loop inside a for loop - nested loops
+
+- O(2n) - EXPONENTIAL - growth doubles with each additon to the input data set..growth curve of an O(2N) function is exponential 
+- starting off very shallow, then rising meteorically. recursive fibbonacci numbers.  Multiplying two n-digit numbers by a simple algorithm; simple sorting algorithms, such as bubble sort, selection sort and insertion sort; (worst case) bound on some usually faster sorting algorithms such as quicksort, Shellsort, and tree sort.
+
+- O(n!) - FACTORIAL - Solving the travelling salesman problem via brute-force search.
+
+
+Amortization - mortgage - payment remains constant.. 
+  overtime values changes
 ---------------------------------------------
-JAVASCRIPT BIG(O)
+::JAVASCRIPT BIG(O)::
 - PUSH /POP - O(1)
 - Shift, Unshift, Concat, Slice, Splice - O(n)
 - sort - O( n log N) - Merge Sort
 - forEach(), map, filter, reduce - O(n)
 ---------------------------------------------
-
+::Examples::
+- Object.assign - O(n) -  looping an array once and assigning the value to the object,
+- Insert an array middle of an array - O(n) - 
+- remove duplicates fro array - linera or lag or quadratic
+- Uppercase a string - O(n)
+- Inset an item in a linked list - 
+---------------------------------------------
 SORT
 
 BEST- O(n)  |  WORST - O(n^2)	O(n^2)
@@ -45,10 +63,10 @@ Selection sort
 
 ARRAYS:
 t = [1, 6, 16, 8, 9, 9, 7]
-
 sort() =  //[ 1, 16, 6, 7, 8, 9, 9 ]
 //SOME - The some() method tests whether at least one element in the array passes the test implemented by the provided function.
 ---------------------------------------------
+
 SPLICE VS SLICE
 //1. splice() method returns the removed item(s) in an array and 
 //2. slice() method returns the selected element(s) in an array, as a new array object.
@@ -123,9 +141,15 @@ TREE
     https://medium.freecodecamp.org/data-structures-101-binary-search-tree-398267b6bff0
 
 ---------------------------------------------
-GRAPH 
+GRAPH vs tree
 - abstract connection of points, describe state transitions, can be directed and weghted, collection of vertices/nodes
 TREES - no cycle, filesystem, collection of nodes and edges
+
+---------------------------------------------
+GRAPH
+Undirected graph -> facebook, social network - 
+Directed -> interlinked web page... index -> page -> link to article
+            web crawler
 
 SPECIFIC USES: GRAPH
   1. Binary Search trees - left child- right child and a value
@@ -169,7 +193,6 @@ pop() removes the most recently added data.
 
 QUEUES - First In, First Out (FIFO). 
 ---------------------------------------------
-TREES :
 ---------------------------------------------
 
 
