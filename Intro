@@ -1,0 +1,76 @@
+Please find collated details for HD Accredo projects.
+
+ 
+My name is JAnki depala
+I amw orking as Engineer with Accenture.
+I started my career working with Flash and moved on to jquery and SPA.
+I have worked on BB, React , ANgular and Dart
+
+
+
+HD - MTF – Military Treatment Facility  - Provider will register with NPI that is allotted him and can add/register Trusted on behalf of him.
+
+Provider will 3 types of requests 
+
+ a) Prescription Request
+
+ b) Prescription Renewal
+
+ c) Home Delivery
+
+Trusted agent supports the provider and can also register with Prescriber's NPI to support Provider. He will verify patient related data and send it to the Provider. Provider after verification, he will approve/decline/remove the details.
+
+Some functionality implemented:
+
+Also If provider is not available for a particular period of time, surrogate functionality was introduced, in which a temporary provider of same location will be the Provider.
+OTP and Authentication functionality is implemented.
+CAC - Common Access Card- Prescriber can swipe the card for portal login (under Analysis) 
+If CAC implemented Login Page and OTP Services will be removed.
+
+ Technical landscape :React, Redux, Spring Boot, Jira, GIT, Jasmine unit tests, Junits, Jasmine and night watch ,PCF and Jenkins for continuous builds using DEVOPS
+
+Automation using selenium
+
+ 
+
+HD - Accredo Prescriber Portal--Same as MTF-Portal but target audience is general public.            
+
+Here it will be Prescriber and agent.
+
+Functionalities implemented is Bulk Registration of Prescriber and agent.
+
+Technical landscape : Implemented using SOFEA and Mule with distributed agile
+
+Dev Ops and Continues Integration : Hudson
+
+ 
+
+ 
+
+HD - DRM – React based application that support diabetic patient to register for One touch account. One touch account is connected to One touch diabetic and testing device.
+
+Based on registration coupon is shared with a patient user would be able to register to access OneTouch account using DRM application.
+
+To create an account user has to provide few personal information and few health information related to diabetes. This application only covers registration of users.
+It also involves batch system to process information provided by mainframe systems which introduces user coupon information to DRM databases.
+
+Technical landscape :React, Redux, Spring Boot, Jira, GIT, Jasmine unit tests, Junits, Jasmine and night watch ,PCF and Jenkins for continuous builds using DEVOPS
+
+Automation using selenium
+
+ 
+
+SPECIALTY -- Accredo is a specialty pharmaceutical and service provider for patients with complex and chronic health conditions.
+
+At Accredo, the treatment with specialty medications can be difficult and stressful. Each patient is unique and has different needs.
+
+Accredo has  specialty-trained pharmacists, nurses, patient care advocates, social workers and insurance coordinators are here to handle everything about the medications for patients. 
+Accredo dispenses more than 300 specialty drugs from more than 30 dispensing pharmacies nationwide.
+
+Scope:
+
+This project is about implementing web portal for Accredo patients who are subsidiaries for ESI. By using this portal, patients can order their prescriptions through online, track their order and check the historical information. Patients can also change their demographic information by using this. The first phase is successfully completed with the functionalities of Login and view and updating to the patient profile, Order history, Order refill and order tracking. Also Implemented the services which can be used by Web, mobile and IVR.
+
+Technical landscape :React, Redux, Spring Boot, Jira, GIT, Jasmine unit tests, Junits, Jasmine and night watch ,PCF and Jenkins for continuous builds using DEVOPS
+
+Automation using selenium

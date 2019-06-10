@@ -142,3 +142,4 @@ function Node(data) {
   doublyLinkedList.traverseReverse(function(node) { console.log(node.data); }); // => 18 17 16 15 14 13 12
   doublyLinkedList.print(); // => 12 13 14 15 16 17 18
   console.log('length is 7:', doublyLinkedList.length()); // => 7
+  console.log(doublyLinkedList)

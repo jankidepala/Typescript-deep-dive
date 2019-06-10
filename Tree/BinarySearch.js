@@ -95,3 +95,9 @@ class BST {
 let bst = new BST();
 console.log(bst.insert(26).insert(20).insert(70).insert(80)); // BST { root: Node { value: 25, left: null, right: null } }
 console.log("SEARCH", bst.getMin());
+var a = ['B', -6, '1','2','3']
+var result = a.map(function (x) { 
+  return parseInt(x, 10) && x>0; 
+});
+
+console.log(result);

@@ -17,7 +17,6 @@ BIG(O)
 
 - O(n!) - FACTORIAL - Solving the travelling salesman problem via brute-force search.
 
-
 Amortization - mortgage - payment remains constant.. 
   overtime values changes
 ---------------------------------------------
@@ -32,7 +31,9 @@ Amortization - mortgage - payment remains constant..
 - Insert an array middle of an array - O(n) - 
 - remove duplicates fro array - linera or lag or quadratic
 - Uppercase a string - O(n)
-- Inset an item in a linked list - 
+- Inset an item in a linked list -  O(n)
+- Compute the checksum of strings in an array - O(n)
+- Sort an array - Exponential
 ---------------------------------------------
 SORT
 
@@ -156,11 +157,11 @@ SPECIFIC USES: GRAPH
   traversing is faster
   2. Object graphs - Component of a program
 
-  BREATH FIRST - 
+  BREATH FIRST - QUEUE - FIFO - No Backtracking
     every sibbling to be checked, 
     find shortest way bettween 2 nodes
 
-DEPTH FIRRST - binary tree
+DEPTH FIRRST - STACK - FIFO - Backtracking
 ---------------------------------------------
 
 ---------------------------------------------
@@ -170,7 +171,8 @@ Insertion - O(log n)
 Searchin - O(log n)
 
 ---------------------------------------------
-STACK - Last In, First Out (LIFO)
+STACK - Last In, First Out (LIFO) - Stack of books
+push and pop, peek, length
 stack organizes data into sequential order.
 // Stacks are used for
     - Managing function
@@ -181,7 +183,7 @@ push(data) adds data.
 pop() removes the most recently added data.
     BIG O STACK ---------->
     Insertion - O(1)
-    Removal  - O(1)
+    Removal  - O(1) 
     Searching - O(N)
     Access - O(N)
 
@@ -191,8 +193,8 @@ pop() removes the most recently added data.
     Searching - O(N)
     Access - O(N)
 
-QUEUES - First In, First Out (FIFO). 
----------------------------------------------
+QUEUES - First In, First Out (FIFO). line of people
+
 ---------------------------------------------
 
 
@@ -273,4 +275,13 @@ it has access to its own scope — variables defined between its curly brack
 it has access to the outer function’s variables
 it has access to the global variables
 To the uninitiated, this definition might seem like j
+
+---------------------------------------------
+Dynamic programming: Method of solving complex problem by breaking it down into a collection of simpler subproblem, solving and string their solutions.
+
+- Overlapping subproblems :
+  problem has to overlap and so reusable
+  eg:: fibanacci seq - last 2 digit is equal to next number
+
+- Optimal substructure - problem can be constructed from optimal solutions of its subproblem
 

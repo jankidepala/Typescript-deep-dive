@@ -12,3 +12,29 @@ If you get a chance, study up on fancier algorithms, such as Dijkstra and A* (fo
 
 ----------
 4. Given a sorted array convert the same to a Binary Search Tree
+
+
+Red Black tree:
+
+tim os O(log n) 
+- Node is red or black
+- root and leaves (NIL) are black
+- if node is red, children are black
+- All paths from a node to its NIL descendants contain same number of black nodes.
+- longest path- alternate red and black
+- shortest path - black nodec
+
+SPLAY TRESS
+- ALmost balances
+- access keys faster
+find- walk tot he key
+insert - normal BST
+remove - same as BST
+Zig zag procedure - when x
+rotate parent and grand parent
+
+
+AVL trees: Diff in height should always be less than or more than 1
+ 
+Control depth of a tree so that i
+

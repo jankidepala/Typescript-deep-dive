@@ -45,10 +45,10 @@ LinkedList.prototype.search = function(searchValue) {
 
 const otherlist = new LinkedList();
 otherlist.addToHead(100);
-otherlist.addToHead(200);
-otherlist.addToHead(300);
-otherlist.addToTail(100);
-otherlist.addToTail(200);
+// otherlist.addToHead(200);
+// otherlist.addToHead(300);
+// otherlist.addToTail(100);
+// otherlist.addToTail(200);
 otherlist.addToTail(8800);
 console.log("SEARC __>",otherlist.search(8800)); // true
 
