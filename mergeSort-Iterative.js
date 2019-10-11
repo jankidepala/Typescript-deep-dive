@@ -47,8 +47,8 @@ function mergeSort(items) {
         }
         work[j] = [];  //in case of odd number of items
     }
-    console.log(work)
-    return work[0];
+    console.log("YYY", work)
+    return work;
 }
 
 var arr1 = [3, -6576, 55.188, 16, 55.134, 8, 1];
