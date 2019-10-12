@@ -1,4 +1,6 @@
 //UnionThingType  ="As";
+var log = console.log.bind(console);
+
 var retSomething = function (s) {
     console.log(typeof s);
     if (s instanceof Array) {

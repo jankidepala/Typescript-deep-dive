@@ -4,7 +4,7 @@
  */
 var firstUniqChar = function(s) {
     var m;
-    var word = s.split('');
+    var word = s.split(''``);
     Loop1:
     for (i = 0; i < word.length; i++) {       
         Loop2:
