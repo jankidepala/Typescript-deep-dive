@@ -24,6 +24,7 @@ const IntersectedArrays = (nums1, nums2) => {
 
     //nums1.sort(cm);
     //nums2.sort(cm);
+    var log = console.log.bind(console);
 
     while (p1 < nums1.length && p2 < nums2.length) {
        // console.log(p1, nums1.length, p2, nums2.length)

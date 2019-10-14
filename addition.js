@@ -1,10 +1,11 @@
 function sumShouldBEZero(a) {
     a.reduce((prev, next) => {
-        return false
+        console.log(a, prev, next)
+        return next 
     })
 }
 
-//sumShouldBEZero( [ -3, 0, 3, ])
+sumShouldBEZero( [ -3, 0, 3, 7])
 
 
 function countUniqueVal(s) {
