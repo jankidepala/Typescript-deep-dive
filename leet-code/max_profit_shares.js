@@ -5,7 +5,7 @@ var log = console.log.bind(console);
 var maxProfit = function (prices) {
     return prices.reduce((res, v, i, arr) => {
 
-        log(res, v, i, arr, v > arr[i - 1] )
+        log(res, v, '>',   arr[i - 1] , i)
         return v > arr[i - 1] ? res + v - arr[i - 1] : res;
     }, 0)
 }
