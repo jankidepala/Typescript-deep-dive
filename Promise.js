@@ -87,15 +87,55 @@ var h = [1, 5, 7, 8]
 //let toIntArray = (n) => ([...n + ''].map(t => { return t * 2 }));
 //console.log(toIntArray(n));
 
-var n = [1, 9,6, 9, 9];
+var n = [1, 9, 6, 9, 9];
 function add(n1) {
     var f = Number(n1.join(''))
     f = f + 1;
     return f.toString().split('').map((Number))
 }
 
-var addOne = function(source) {
+var addOne = function (source) {
     return Array.isArray(source) ? (Number.parseInt(source.join('')) + 1).toString().split('').map(Number) : source;
-   }
+}
 console.log(addOne(n));
+//------
+// var http = fetch('urll');
+// let promise1 = new Promise ((resolve, reject) =>{
+//     fetch('urll').then( response =>{
+//         if(response.ok){
+//             resolve('Success')
+//         } else{
+//             reject(new ResponseError('Invalid Json'))
+//         }
+//     }, error =>{
+//         reject(new NetworkError(error.message))
+//     })
+// })
+// const wait = (time) => new Promise((resolve, reject) => {
+//     setTimeout(() => resolve('APPP'), time)
+// })
 
+// const wait1 = (time) => new Promise((resolve, reject) => {
+//     setTimeout(() => resolve('APPP'), time)
+// })
+
+// wait(300)
+// .then((v) => console.log(v))
+// .catch( e => console.log(e))
+
+console.log(typeof null)
+
+var output = (function(x) {
+    delete x;
+    console.log('xx', x)
+    return x;
+  })(21);
+  
+  console.log(output);
+
+  var Employee = {
+    company: 'xyz'
+  }
+  var emp1 = Object.create(Employee);
+  delete emp1.company
+  console.log('000',emp1.company);
