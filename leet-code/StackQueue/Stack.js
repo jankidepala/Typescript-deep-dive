@@ -17,6 +17,7 @@ const check = (str) => {
 
     const arr = str.split('');
     for( let i=0; i<arr.length; i++){
+        const currElem = arr[i]
         console.log(arr[i])
     }
 }
