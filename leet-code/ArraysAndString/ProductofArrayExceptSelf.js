@@ -12,4 +12,4 @@ const product = (ar) => {
     console.log(result);
 }
 
-console.log( product(ar))
+console.log( product(ar));;
