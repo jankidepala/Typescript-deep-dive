@@ -21,11 +21,19 @@
 // Could you do it in-place with O(1) extra space?
 
 var rotate = function (nums, k) {
+    return [ [...nums.slice(k, nums.length)],
+        [...nums.slice(0, k)]
+        ]
+}
+
+
+var rotate1 = function (nums, k) {
     console.log(nums.length)
     console.log([...nums.splice(nums.length - k)], b)
 
     var b = nums.unshift(...nums.splice(nums.length - k));
 };
 
-var nums = [1, 2]; var k = 1
-rotate(nums, k);
+var nums = [1, 2, 3, 5]; var k = 1
+console.log(rotate(nums, k))
+console.log('NUMS', nums)

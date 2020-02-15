@@ -40,18 +40,18 @@ var timeSell = arr.reduce((initVal, currentVal, index, ary) => {
 //   });
 
 
-console.log(doit(arr));
+//console.log(doit(arr));
 
 
 const twoSum = (nums, target) => {
     const a = {};
 
-    for (let i = 0; i < nums.length; i++) {
-        const difference = target - nums[i];
+    for (let i = 0; i <= nums.length; i++) {
+       // const difference = target - nums[i];
         console.log('---', a)
-        if (difference in a) {
-            return [a[difference], i];
-        }
+        // if (difference in a) {
+        //     return [a[difference], i];
+        // }
         console.log(a)
 
         a[nums[i]] = i;
@@ -61,4 +61,4 @@ const twoSum = (nums, target) => {
 };
 
 
-console.log(twoSum([1,3, 5,7,8], 12));
+console.log(twoSum([4,3, 7], 12));
