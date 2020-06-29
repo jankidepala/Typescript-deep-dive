@@ -39,7 +39,7 @@ function outer(baseNumber) {
 var m = (t) => {
   for (var i = 0; i < 3; i++) {
     setTimeout(function (j) {
-      return console.log(j);
+      return console.log(j)pr
     }(i), 1000 + i);
   }
 }
